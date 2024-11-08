@@ -10,7 +10,7 @@ import ContactForm from '../_components/ContactForm'
 const companies = [
   { 
     name: 'Village Creative', 
-    logo: '/images/vc-White.png', 
+    logo: '/Images/vc-White.png', 
     description: "The Village Creative is a collective of independent creative communication practitioners and producers.", 
     website: '#', 
     backgroundClass: 'bg-village-creative',  // Add unique class here
@@ -18,7 +18,7 @@ const companies = [
   },
   { 
     name: 'Fat Rain Films', 
-    logo: '/images/fatrainfilms-3-300x300.png', 
+    logo: '/Images/fatrainfilms-3-300x300.png', 
     description: "Fat Rain Films offers world class film and television production services and since its inception in 2014 has created some of Kenya's most loved commercials.",
     website: 'http://www.fatrainfilms.com/',
     backgroundClass: 'bg-fat-rain-films',  // Add unique class here
