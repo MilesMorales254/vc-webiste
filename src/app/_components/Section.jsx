@@ -7,8 +7,8 @@ export default function Section({ company }) {
       {/* Company Content */}
       <div className="relative z-10 flex flex-col items-center max-w-2xl mx-auto">
         <img 
-          src="/Images/vc-White.png" 
-          alt="Village Creative Logo"
+          src={company.logo} 
+          alt={`${company.name} logo`} 
           width={200} 
           height={200} 
           className="mb-8"
