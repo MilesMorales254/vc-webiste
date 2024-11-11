@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customBeige: '#D8B595',  // Define the custom color
       },
     },
   },

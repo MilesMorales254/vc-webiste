@@ -14,6 +14,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -37,14 +41,98 @@ body {
 }
 
 .bg-village-creative {
+  background-image: url('/Images/homebanner-vc-1.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-b-wing {
+  background-image: url('/Images/B-Wing.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-shamba {
   background-image: url('/Images/test photo 1.jpeg');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 
+.bg-socialite {
+  background-image: url('/Images/Socialite.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-truetribe {
+  background-image: url('/Images/Truetribe.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-3verse {
+  background-image: url('/Images/ ');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-the-block {
+  background-image: url('/Images/ ');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-apo {
+  background-image: url('/Images/Apo-banner.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-black-eye-photography {
+  background-image: url('/Images/blackeye.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-daraja {
+  background-image: url('/Images/ ');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-folklore {
+  background-image: url('/Images/Folklore.jpeg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-fat-rain-films {
-  background-image: url('/Images/test photo 2.jpeg');  /* Update with the correct path */
+  background-image: url('/Images/fatrainfilms.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-nomad {
+  background-image: url('/Images/Nomad.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-mookh {
+  background-image: url('/Images/Truetribe.jpg');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
