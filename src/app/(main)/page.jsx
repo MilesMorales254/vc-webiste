@@ -89,6 +89,16 @@ const companies = [
   },
 
   { 
+    name: 'Ajuma', 
+    logo: '/Images/.png', 
+    description: "AJUMA Ltd. is a leading casting and modeling agency owned and operated by international supermodel Ajuma Nasenyana.",
+    website: '',
+    backgroundClass: 'bg-ajuma',  // Add unique class here
+    logoSize: 450,  // Set specific logo size for this company
+    isContactUs: false // Add this property
+  },  
+
+  { 
     name: 'Black-eye Photography', 
     logo: '/Images/blackeye-logo-WHITE-1.png', 
     description: "Black eye photography is a ground-breaking production company with the aim of building solid foundations in the production industry for Kenyas most prolific photographers.",

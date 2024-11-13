@@ -96,6 +96,13 @@ body {
   background-position: center;
 }
 
+.bg-ajuma {
+  background-image: url('/Images/AJ.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-black-eye-photography {
   background-image: url('/Images/blackeye.jpg');  /* Update with the correct path */
   background-attachment: fixed;
