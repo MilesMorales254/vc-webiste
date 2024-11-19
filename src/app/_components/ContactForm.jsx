@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
@@ -8,10 +8,11 @@ export default function ContactForm() {
   const [statusMessage, setStatusMessage] = useState('');
   const [statusType, setStatusType] = useState(''); // To distinguish between success and error messages
   const [emailError, setEmailError] = useState(''); // To store email validation error
+  const [loading, setLoading] = useState(false); // Tracks submission status
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    
+
     // Email validation check on each change
     if (e.target.name === 'email') {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -32,7 +33,7 @@ export default function ContactForm() {
       setStatusType('error');
       return;
     }
-    
+
     // Prevent submission if email format is invalid
     if (emailError) {
       setStatusMessage('Please correct the errors before submitting.');
@@ -40,13 +41,17 @@ export default function ContactForm() {
       return;
     }
 
+    // Start loading
+    setLoading(true);
+
     // EmailJS service information
-    const serviceID = 'service_vgvsdvm';  // Replace with your Service ID
+    const serviceID = 'service_m6my89r'; // Replace with your Service ID
     const templateID = 'template_rq8xx9g'; // Replace with your Template ID
-    const userID = 'UMuQO3XmlC5muvlzm';   // Replace with your Public Key from EmailJS
+    const userID = 'UMuQO3XmlC5muvlzm'; // Replace with your Public Key from EmailJS
 
     // Send email using EmailJS
-    emailjs.send(serviceID, templateID, formData, userID)
+    emailjs
+      .send(serviceID, templateID, formData, userID)
       .then(() => {
         setStatusMessage('Your message has been sent successfully!');
         setStatusType('success');
@@ -56,6 +61,9 @@ export default function ContactForm() {
         setStatusMessage('Failed to send message. Please try again later.');
         setStatusType('error');
         console.error('EmailJS Error:', error);
+      })
+      .finally(() => {
+        setLoading(false); // Stop loading
       });
   };
 
@@ -71,7 +79,7 @@ export default function ContactForm() {
     <section id="contact" className="min-h-screen flex flex-col items-center justify-center relative bg-cover bg-fixed">
       <div className="bg-black bg-opacity-50 p-8 rounded-lg shadow-lg max-w-3xl w-full text-white">
         <h2 className="text-4xl font-bold mb-8 text-center">CONTACT US</h2>
-        
+
         <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
           <div className="col-span-1 md:col-span-1">
             <input
@@ -84,7 +92,7 @@ export default function ContactForm() {
               className="w-full px-4 py-3 border border-white bg-transparent text-white placeholder-white rounded focus:outline-none focus:ring-2 focus:ring-white"
             />
           </div>
-          
+
           <div className="col-span-1 md:col-span-1">
             <input
               type="email"
@@ -97,7 +105,7 @@ export default function ContactForm() {
             />
             {emailError && <p className="text-red-500 text-sm mt-1">{emailError}</p>}
           </div>
-          
+
           <div className="col-span-1 md:col-span-2">
             <textarea
               name="message"
@@ -109,17 +117,27 @@ export default function ContactForm() {
               className="w-full px-4 py-3 border border-white bg-transparent text-white placeholder-white rounded focus:outline-none focus:ring-2 focus:ring-white"
             ></textarea>
           </div>
-          
+
           <div className="col-span-1 md:col-span-2 text-center">
-            <button type="submit" className="px-8 py-3 border border-white text-white bg-transparent rounded hover:bg-white hover:text-black transition-colors duration-300">
-              SEND
+            <button
+              type="submit"
+              disabled={loading}
+              className={`px-8 py-3 border border-white text-white bg-transparent rounded hover:bg-white hover:text-black transition-colors duration-300 ${
+                loading ? 'cursor-not-allowed opacity-70' : ''
+              }`}
+            >
+              {loading ? 'SENDING...' : 'SEND'}
             </button>
           </div>
         </form>
-        
+
         {/* Toast Notification */}
         {statusMessage && (
-          <div className={`fixed top-4 right-4 px-4 py-3 rounded shadow-lg text-white ${statusType === 'success' ? 'bg-green-500' : 'bg-red-500'}`}>
+          <div
+            className={`fixed top-4 right-4 px-4 py-3 rounded shadow-lg text-white ${
+              statusType === 'success' ? 'bg-green-500' : 'bg-red-500'
+            }`}
+          >
             {statusMessage}
           </div>
         )}
