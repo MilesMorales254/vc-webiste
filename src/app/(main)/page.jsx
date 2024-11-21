@@ -11,7 +11,7 @@ const companies = [
   { 
     name: 'Village Creative', 
     logo: '/Images/vc-White.png', 
-    description: "The Village Creative is a collective of independent creative communication practitioners and producers.", 
+    description: "The Village Creative Ltd is a multi-user ecosystem made up of independent creative and communications practitioners. Our one of a kind curated space encourages interaction and collaboration between different disciplines and fosters innovative solutions.", 
     website: '#', 
     backgroundClass: 'bg-village-creative',  // Add unique class here
     logoSize: 450,  // Set specific logo size for this company
