@@ -139,7 +139,7 @@ body {
 }
 
 .bg-mookh {
-  background-image: url('/Images/Truetribe.jpg');  /* Update with the correct path */
+  background-image: url('/Images/Mookh.jpg');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
