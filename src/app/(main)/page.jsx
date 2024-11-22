@@ -90,11 +90,11 @@ const companies = [
 
   { 
     name: 'Ajuma', 
-    logo: '/Images/.png', 
+    logo: '/Images/Ajuma Logo.png', 
     description: "AJUMA Ltd. is a leading casting and modeling agency owned and operated by international supermodel Ajuma Nasenyana.",
     website: '',
     backgroundClass: 'bg-ajuma',  // Add unique class here
-    logoSize: 450,  // Set specific logo size for this company
+    logoSize: 650,  // Set specific logo size for this company
     isContactUs: false // Add this property
   },  
 
