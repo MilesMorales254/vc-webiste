@@ -48,6 +48,16 @@ const companies = [
     isContactUs: false // Add this property
   },
 
+ { 
+    name: 'Scale', 
+    logo: '/Images/Scale_Green_Logo.png', 
+    description: " Scale is a Software as a Service platform that is a simple, flexible and powerful procurement solution for large and small organizations ", 
+    website: ' https://www.scale.co.ke ', 
+    backgroundClass: 'bg-scale',  // Add unique class here
+    logoSize: 600,  // Set specific logo size for this company
+    isContactUs: false // Add this property
+  },
+
   { 
     name: 'True Tribe', 
     logo: '/Images/True-Tribe-Network.png', 
@@ -58,15 +68,15 @@ const companies = [
     isContactUs: false // Add this property
   },
 
- /* { 
+  { 
     name: '3Verse', 
-    logo: '/Images/.png', 
-    description: " ", 
-    website: '', 
+    logo: '/Images/3verse_3vr-01.png', 
+    description: " MAKE GREAT SH*T HAPPEN ", 
+    website: 'https://www.3verse.co.za/', 
     backgroundClass: 'bg-3verse',  // Add unique class here
-    logoSize: 300,  // Set specific logo size for this company
+    logoSize: 600,  // Set specific logo size for this company
     isContactUs: false // Add this property
-  },*/
+  },
 
   /* { 
     name: 'The Block', 

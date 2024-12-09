@@ -68,6 +68,13 @@ body {
   background-position: center;
 }
 
+.bg-scale {
+  background-image: url('/Images/Scale.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-truetribe {
   background-image: url('/Images/Truetribe.jpg');  /* Update with the correct path */
   background-attachment: fixed;
@@ -76,7 +83,7 @@ body {
 }
 
 .bg-3verse {
-  background-image: url('/Images/ ');  /* Update with the correct path */
+  background-image: url('/Images/3verse.jpg');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
