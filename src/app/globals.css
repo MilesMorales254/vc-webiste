@@ -55,7 +55,7 @@ body {
 }
 
 .bg-shamba {
-  background-image: url('/Images/test photo 1.jpeg');  /* Update with the correct path */
+  background-image: url('/Images/Shamba.jpg');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -118,7 +118,7 @@ body {
 }
 
 .bg-daraja {
-  background-image: url('/Images/ ');  /* Update with the correct path */
+  background-image: url('/Images/Daraja.jpg ');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

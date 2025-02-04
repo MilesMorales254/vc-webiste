@@ -1,8 +1,12 @@
 'use client'
 
 import Link from 'next/link'
+import { useState } from 'react';
 
-export default function Navbar({ menuOpen, setMenuOpen }) {
+export default function Navbar() {
+  // Manage menu open state inside Navbar to prevent hydration issues
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     // Header container with fixed positioning and full width
     <header className="fixed top-0 left-0 w-full z-50">
