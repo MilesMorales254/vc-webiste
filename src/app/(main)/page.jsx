@@ -122,7 +122,7 @@ const companies = [
     name: 'Daraja', 
     logo: '/Images/DarajaLogo.png', 
     description: " Daraja is an East African music innovation powerhouse, dedicated to transforming the region’s sonic identity and showcasing it on a global stage. We envision a thriving East African music scene where innovation flourishes, cultural heritage is celebrated, and artistic voices resonate worldwide. Daraja connects artists, pioneers new sound, and builds a collaborative ecosystem to unite communities and elevate East African narratives. ", 
-    website: 'Misrak.studio', 
+    website: 'https://misrak.studio/', 
     backgroundClass: 'bg-daraja',  // Add unique class here
     logoSize: 800,  // Set specific logo size for this company
     isContactUs: false // Add this property
