@@ -40,6 +40,14 @@ body {
   background-position: center;
 }
 
+/* Fix iPhone distortion */
+@media (max-width: 767px), 
+  (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 1024px) {
+  .bg-parallax {
+    background-attachment: scroll !important;
+  }
+}
+
 .bg-village-creative {
   background-image: url('/Images/homebanner-vc-1.jpg');  /* Update with the correct path */
   background-attachment: fixed;
