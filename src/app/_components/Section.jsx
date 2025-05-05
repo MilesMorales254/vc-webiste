@@ -28,7 +28,7 @@ export default function Section({ company }) {
     >
       {/* Company Content */}
       <div className="relative z-10 flex flex-col items-center mx-auto px-4 max-w-xl sm:max-w-2xl lg:max-w-4xl">
-        <img 
+        <Image 
           src={company.logo} 
           alt={`${company.name} logo`} 
           width={company.logoSize || 450}  

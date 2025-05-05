@@ -1,4 +1,4 @@
-'use client'
+
 
 //import React from 'react'
 import React, { useState } from 'react'
@@ -33,7 +33,7 @@ const companies = [
     logo: '/Images/TheShambaLogo-01.png', 
     description: " STRATEGY - CREATIVE - EXECUTION ", 
     website: '', 
-    backgroundClass: 'bg-shamba',  // Add unique class here
+    backgroundClass: '',  // Add unique class here
     logoSize: 800,  // Set specific logo size for this company
     isContactUs: false // Add this property
   },
