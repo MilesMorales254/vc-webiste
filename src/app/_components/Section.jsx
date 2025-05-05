@@ -35,6 +35,8 @@ export default function Section({ company }) {
           width={company.logoSize || 450}  
           height={company.logoSize || 450}  
           className="mb-8"
+          quality={100}         // Maximises image clarity
+          priority              // Ensures early load (optional for above-the-fold logos)
         />
         <div className="bg-black bg-opacity-75 p-6 rounded-lg text-center">
           <p className="mb-8 text-white">{company.description}</p>
