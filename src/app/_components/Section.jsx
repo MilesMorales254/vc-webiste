@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Image from 'next/image';
 
 export default function Section({ company }) {
   // Prevent hydration mismatch by tracking if it's the client
