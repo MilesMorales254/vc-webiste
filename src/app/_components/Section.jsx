@@ -24,9 +24,9 @@ export default function Section({ company }) {
 
   return (
     <section 
-      id={company.name.toLowerCase().replace(/\s+/g, '-')} 
-      className={`min-h-screen flex flex-col items-center justify-center relative ${company.backgroundClass}`}  
-    >
+    id={company.name.toLowerCase().replace(/\s+/g, '-')} 
+    className={`min-h-screen flex flex-col items-center justify-center relative ${company.backgroundClass} bg-parallax`}  
+  >
       {/* Company Content */}
       <div className="relative z-10 flex flex-col items-center mx-auto px-4 max-w-xl sm:max-w-2xl lg:max-w-4xl">
         <Image 
