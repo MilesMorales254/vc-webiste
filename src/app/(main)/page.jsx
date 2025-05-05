@@ -33,7 +33,7 @@ const companies = [
     logo: '/Images/TheShambaLogo-01.png', 
     description: " STRATEGY - CREATIVE - EXECUTION ", 
     website: '', 
-    backgroundClass: '',  // Add unique class here
+    backgroundClass: 'bg-shamba',  // Add unique class here
     logoSize: 800,  // Set specific logo size for this company
     isContactUs: false // Add this property
   },
