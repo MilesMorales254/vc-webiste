@@ -55,6 +55,14 @@ body {
   background-position: center;
 }
 
+.bg-kreators-afrika {
+  background-image: url('/Images/kreatorsafrika.jpg');  /* Update with the correct path */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+
 .bg-b-wing {
   background-image: url('/Images/B-Wing.jpg');  /* Update with the correct path */
   background-attachment: fixed;
@@ -141,13 +149,6 @@ body {
 
 .bg-fat-rain-films {
   background-image: url('/Images/fatrainfilms.jpg');  /* Update with the correct path */
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-nomad {
-  background-image: url('/Images/Nomad.jpg');  /* Update with the correct path */
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

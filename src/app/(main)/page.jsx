@@ -19,6 +19,16 @@ const companies = [
   },
 
   { 
+    name: 'Kreators Afrika', 
+    logo: '/Images/KREATORS.png', 
+    description: "Kreators Afrika is Kenya's premier campus for content creators, providing the essential infrastructure, inspiration, and visibility for them to thrive. We envision an Africa whose future is shaped by its own powerful stories and collaborative innovators. Kreators Afrika unites diverse talents, provides studios and mentorship, and builds a launchpad for the narratives that will define the continent.",
+    website: 'https://www.kreatorsafrika.com/',
+    backgroundClass: 'bg-kreators-afrika',  // Add unique class here
+    logoSize: 300,  // Set specific logo size for this company
+    isContactUs: false // Add this property
+  }, 
+
+  { 
     name: 'B-Wing', 
     logo: '/Images/b-wing-logo.png', 
     description: "A collective of Nairobi’s most innovative concept generators.", 
@@ -145,16 +155,6 @@ const companies = [
     website: 'http://www.fatrainfilms.com/',
     backgroundClass: 'bg-fat-rain-films',  // Add unique class here
     logoSize: 300,  // Set specific logo size for this company
-    isContactUs: false // Add this property
-  },
-
-  { 
-    name: 'Nomad', 
-    logo: '/Images/nomad africa logo white.png', 
-    description: "Nomad Africa, the travel agency behind Nomad Magazine, is all about crafting unique journeys and sparking a love for travel through engaging stories.Led by a team of intrepid female explorers, Nomad Africa specializes in creating off-the-beaten-path itineraries that leave a lasting impression.",
-    website: 'https://nomad.africa/',
-    backgroundClass: 'bg-nomad',  // Add unique class here
-    logoSize: 450,  // Set specific logo size for this company
     isContactUs: false // Add this property
   },  
 
