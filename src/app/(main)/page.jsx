@@ -24,7 +24,7 @@ const companies = [
     description: "Kreators Afrika is Kenya's premier campus for content creators, providing the essential infrastructure, inspiration, and visibility for them to thrive. We envision an Africa whose future is shaped by its own powerful stories and collaborative innovators. Kreators Afrika unites diverse talents, provides studios and mentorship, and builds a launchpad for the narratives that will define the continent.",
     website: 'https://www.kreatorsafrika.com/',
     backgroundClass: 'bg-kreators-afrika',  // Add unique class here
-    logoSize: 300,  // Set specific logo size for this company
+    logoSize: 350,  // Set specific logo size for this company
     isContactUs: false // Add this property
   }, 
 
